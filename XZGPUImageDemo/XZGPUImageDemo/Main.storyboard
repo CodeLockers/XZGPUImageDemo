@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wYT-Zv-HEr">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--GPUImage-->
+        <scene sceneID="8LA-o5-QYo">
+            <objects>
+                <tableViewController id="He0-sC-1V9" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="krY-H1-I9v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="86r-vt-fgj">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="n3y-vF-90E">
+                                        <rect key="frame" x="0.0" y="64" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n3y-vF-90E" id="Jhi-oL-iKE">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageBrightnessFilter(亮度)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDQ-ri-L0v">
+                                                    <rect key="frame" x="15" y="11.5" width="248" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SDQ-ri-L0v" firstAttribute="centerY" secondItem="Jhi-oL-iKE" secondAttribute="centerY" id="2QQ-Bu-FzR"/>
+                                                <constraint firstItem="SDQ-ri-L0v" firstAttribute="leading" secondItem="Jhi-oL-iKE" secondAttribute="leading" constant="15" id="SpA-Tr-Xgo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageBrightnessFilter" id="Qnd-vb-ZFm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="cmT-RA-iQj">
+                                        <rect key="frame" x="0.0" y="108" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cmT-RA-iQj" id="ghW-5G-aok">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageContrastFilter(对比度)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghb-Up-i5C">
+                                                    <rect key="frame" x="15" y="11" width="249" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ghb-Up-i5C" firstAttribute="centerY" secondItem="ghW-5G-aok" secondAttribute="centerY" id="DTG-Sc-lFe"/>
+                                                <constraint firstItem="Ghb-Up-i5C" firstAttribute="leading" secondItem="ghW-5G-aok" secondAttribute="leading" constant="15" id="mqQ-Se-Nep"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageContrastFilter" id="grf-jv-YRN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="8tY-Ce-i9Q">
+                                        <rect key="frame" x="0.0" y="152" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8tY-Ce-i9Q" id="Uda-2J-KWD">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageSaturationFilter(饱和度)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19B-4f-JdJ">
+                                                    <rect key="frame" x="15" y="11.5" width="261" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="19B-4f-JdJ" firstAttribute="centerY" secondItem="Uda-2J-KWD" secondAttribute="centerY" id="tCW-hs-Cmt"/>
+                                                <constraint firstItem="19B-4f-JdJ" firstAttribute="leading" secondItem="Uda-2J-KWD" secondAttribute="leading" constant="15" id="wzm-C4-AoU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageSaturationFilter" id="bMj-Gs-4Md"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="xgm-PN-Ml8">
+                                        <rect key="frame" x="0.0" y="196" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xgm-PN-Ml8" id="s2f-Aq-e70">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageExposureFilter(曝光度)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YW2-gt-e7H">
+                                                    <rect key="frame" x="15" y="11.5" width="254" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YW2-gt-e7H" firstAttribute="centerY" secondItem="s2f-Aq-e70" secondAttribute="centerY" id="Iwl-G3-J1H"/>
+                                                <constraint firstItem="YW2-gt-e7H" firstAttribute="leading" secondItem="s2f-Aq-e70" secondAttribute="leading" constant="15" id="UjH-Cv-iVX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageExposureFilter" id="cNJ-11-c9l"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="VD8-51-KXf">
+                                        <rect key="frame" x="0.0" y="240" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VD8-51-KXf" id="X3R-xA-93i">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageWhiteBalanceFilter(白平衡)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOC-xr-Yy0">
+                                                    <rect key="frame" x="15" y="11.5" width="287" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="oOC-xr-Yy0" firstAttribute="leading" secondItem="X3R-xA-93i" secondAttribute="leading" constant="15" id="8IT-eT-zrS"/>
+                                                <constraint firstItem="oOC-xr-Yy0" firstAttribute="centerY" secondItem="X3R-xA-93i" secondAttribute="centerY" id="dT0-8U-3K0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageWhiteBalanceFilter" id="SCc-Bm-qBA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="7GI-Qc-Sjk">
+                                        <rect key="frame" x="0.0" y="284" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7GI-Qc-Sjk" id="Tdc-Sl-dVi">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageVibranceFilter(自然饱和度)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4n-vl-OzP">
+                                                    <rect key="frame" x="15" y="11.5" width="284" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="d4n-vl-OzP" firstAttribute="centerY" secondItem="Tdc-Sl-dVi" secondAttribute="centerY" id="ax5-DR-Be9"/>
+                                                <constraint firstItem="d4n-vl-OzP" firstAttribute="leading" secondItem="Tdc-Sl-dVi" secondAttribute="leading" constant="15" id="wvt-iQ-Eff"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageVibranceFilter" id="KPA-aq-pTq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="MjQ-un-Wuf">
+                                        <rect key="frame" x="0.0" y="328" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MjQ-un-Wuf" id="kYa-Ci-CaE">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageSharpenFilter(锐化)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acR-MJ-3HU">
+                                                    <rect key="frame" x="15" y="11" width="230" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="acR-MJ-3HU" firstAttribute="centerY" secondItem="kYa-Ci-CaE" secondAttribute="centerY" id="Fpy-Na-GEH"/>
+                                                <constraint firstItem="acR-MJ-3HU" firstAttribute="leading" secondItem="kYa-Ci-CaE" secondAttribute="leading" constant="15" id="aaB-bw-ivD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageSharpenFilter" id="lIu-BY-SSC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="rDV-f1-wrC">
+                                        <rect key="frame" x="0.0" y="372" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rDV-f1-wrC" id="mCB-Xr-brS">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageColorInvertFilter(反色)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHU-ze-sTd">
+                                                    <rect key="frame" x="15" y="11.5" width="250" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gHU-ze-sTd" firstAttribute="leading" secondItem="mCB-Xr-brS" secondAttribute="leading" constant="15" id="al4-5F-aLV"/>
+                                                <constraint firstItem="gHU-ze-sTd" firstAttribute="centerY" secondItem="mCB-Xr-brS" secondAttribute="centerY" id="job-Ll-6lF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageColorInvertFilter" id="Lg8-nL-LnC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="l6S-IM-Q2v">
+                                        <rect key="frame" x="0.0" y="416" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l6S-IM-Q2v" id="mM6-hN-rAN">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageSepiaFilter(灰度)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9k-ez-pbm">
+                                                    <rect key="frame" x="15" y="11.5" width="208" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="i9k-ez-pbm" firstAttribute="centerY" secondItem="mM6-hN-rAN" secondAttribute="centerY" id="Jed-El-HAp"/>
+                                                <constraint firstItem="i9k-ez-pbm" firstAttribute="leading" secondItem="mM6-hN-rAN" secondAttribute="leading" constant="15" id="UEk-Xy-pLt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageSepiaFilter" id="Skt-HI-ANf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="M3Q-CU-a47">
+                                        <rect key="frame" x="0.0" y="460" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M3Q-CU-a47" id="k31-M7-LtZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageHistogramGenerator(色彩直方图)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgJ-le-RSz">
+                                                    <rect key="frame" x="15" y="12" width="334.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HgJ-le-RSz" firstAttribute="leading" secondItem="k31-M7-LtZ" secondAttribute="leading" constant="15" id="Q2m-Pu-MOo"/>
+                                                <constraint firstItem="HgJ-le-RSz" firstAttribute="centerY" secondItem="k31-M7-LtZ" secondAttribute="centerY" id="ow2-1W-WH8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageHistogramGenerator" id="w6V-5z-A55"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Wkv-vf-5yT">
+                                        <rect key="frame" x="0.0" y="504" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wkv-vf-5yT" id="QJg-jb-Not">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageSketchFilter(素描)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tce-G9-78Q">
+                                                    <rect key="frame" x="15" y="12" width="218" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Tce-G9-78Q" firstAttribute="leading" secondItem="QJg-jb-Not" secondAttribute="leading" constant="15" id="9sm-N2-Ywz"/>
+                                                <constraint firstItem="Tce-G9-78Q" firstAttribute="centerY" secondItem="QJg-jb-Not" secondAttribute="centerY" id="RnD-qN-wEY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageSketchFilter" id="BJC-74-Zv4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="PAf-pL-n0y">
+                                        <rect key="frame" x="0.0" y="548" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PAf-pL-n0y" id="yuV-6B-hCH">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageHighlightShadowFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2h-M1-wRp">
+                                                    <rect key="frame" x="15" y="12" width="250.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="n2h-M1-wRp" firstAttribute="leading" secondItem="yuV-6B-hCH" secondAttribute="leading" constant="15" id="Gwv-AF-9SU"/>
+                                                <constraint firstItem="n2h-M1-wRp" firstAttribute="centerY" secondItem="yuV-6B-hCH" secondAttribute="centerY" id="ocZ-4L-t3p"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageHighlightShadowFilter" id="M8b-ME-eTp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="WWz-1m-d3E">
+                                        <rect key="frame" x="0.0" y="592" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WWz-1m-d3E" id="zHB-Mg-0tN">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageMissEtikateFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwM-7l-Btv">
+                                                    <rect key="frame" x="15" y="12" width="207" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LwM-7l-Btv" firstAttribute="centerY" secondItem="zHB-Mg-0tN" secondAttribute="centerY" id="ktw-Jo-AsL"/>
+                                                <constraint firstItem="LwM-7l-Btv" firstAttribute="leading" secondItem="zHB-Mg-0tN" secondAttribute="leading" constant="15" id="l1S-kf-6e5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageMissEtikateFilter" id="Bq1-T8-w2R"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="f3h-vc-xFs">
+                                        <rect key="frame" x="0.0" y="636" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f3h-vc-xFs" id="ZUc-bx-Url">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageSoftEleganceFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuI-kV-25h">
+                                                    <rect key="frame" x="15" y="12" width="221.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GuI-kV-25h" firstAttribute="leading" secondItem="ZUc-bx-Url" secondAttribute="leading" constant="15" id="J5H-rl-Kc4"/>
+                                                <constraint firstItem="GuI-kV-25h" firstAttribute="centerY" secondItem="ZUc-bx-Url" secondAttribute="centerY" id="ktA-Yr-Rkz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageSoftEleganceFilter" id="Y0O-53-lcT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="3iZ-yA-zRK">
+                                        <rect key="frame" x="0.0" y="680" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3iZ-yA-zRK" id="AFk-zw-fcG">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageAmatorkaFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g69-Jg-1DS">
+                                                    <rect key="frame" x="15" y="12" width="193.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="g69-Jg-1DS" firstAttribute="centerY" secondItem="AFk-zw-fcG" secondAttribute="centerY" id="VrL-fd-EH5"/>
+                                                <constraint firstItem="g69-Jg-1DS" firstAttribute="leading" secondItem="AFk-zw-fcG" secondAttribute="leading" constant="15" id="ywR-Tq-ziK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageAmatorkaFilter" id="Qya-fl-B8H"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="82u-yH-eCX">
+                                        <rect key="frame" x="0.0" y="724" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="82u-yH-eCX" id="aTM-WV-sty">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageGlassSphereFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6X-OV-dNV">
+                                                    <rect key="frame" x="15" y="12" width="217" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="l6X-OV-dNV" firstAttribute="centerY" secondItem="aTM-WV-sty" secondAttribute="centerY" id="RyJ-Lu-CmP"/>
+                                                <constraint firstItem="l6X-OV-dNV" firstAttribute="leading" secondItem="aTM-WV-sty" secondAttribute="leading" constant="15" id="pwL-cl-Xvj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageGlassSphereFilter" id="iGo-e0-TE5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Z5H-T5-xaa">
+                                        <rect key="frame" x="0.0" y="768" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z5H-T5-xaa" id="5wC-nj-BZw">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPUImageBoxBlurFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7c-RH-mB5">
+                                                    <rect key="frame" x="15" y="12" width="179" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="g7c-RH-mB5" firstAttribute="centerY" secondItem="5wC-nj-BZw" secondAttribute="centerY" id="G8g-bU-TUE"/>
+                                                <constraint firstItem="g7c-RH-mB5" firstAttribute="leading" secondItem="5wC-nj-BZw" secondAttribute="leading" constant="15" id="xV7-fC-Ife"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="GPUImageBoxBlurFilter" id="RsN-rv-KBO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="0Sg-Gb-xXT">
+                                        <rect key="frame" x="0.0" y="812" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Sg-Gb-xXT" id="J4i-4t-yer">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWXproIIFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiq-72-cKW">
+                                                    <rect key="frame" x="15" y="11.5" width="109" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eiq-72-cKW" firstAttribute="centerY" secondItem="J4i-4t-yer" secondAttribute="centerY" id="BfN-EO-b3q"/>
+                                                <constraint firstItem="eiq-72-cKW" firstAttribute="leading" secondItem="J4i-4t-yer" secondAttribute="leading" constant="15" id="dEP-jf-n9D"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWXproIIFilter" id="G6Y-n6-Zld"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="emi-56-Oqf">
+                                        <rect key="frame" x="0.0" y="856" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="emi-56-Oqf" id="HoH-77-pLI">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWWaldenFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGM-mB-Div">
+                                                    <rect key="frame" x="15" y="12" width="121" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lGM-mB-Div" firstAttribute="centerY" secondItem="HoH-77-pLI" secondAttribute="centerY" id="SIJ-ub-WaJ"/>
+                                                <constraint firstItem="lGM-mB-Div" firstAttribute="leading" secondItem="HoH-77-pLI" secondAttribute="leading" constant="15" id="ekV-4p-r7s"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWWaldenFilter" id="hRl-Vl-Poe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="u0l-5b-q0W">
+                                        <rect key="frame" x="0.0" y="900" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u0l-5b-q0W" id="SGk-rO-IEN">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWValenciaFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdn-xA-MrM">
+                                                    <rect key="frame" x="15" y="12" width="127.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Bdn-xA-MrM" firstAttribute="leading" secondItem="SGk-rO-IEN" secondAttribute="leading" constant="15" id="21e-1q-dC5"/>
+                                                <constraint firstItem="Bdn-xA-MrM" firstAttribute="centerY" secondItem="SGk-rO-IEN" secondAttribute="centerY" id="Eku-yF-skZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWValenciaFilter" id="Xgc-Xo-UJo"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="gnt-71-Qb3">
+                                        <rect key="frame" x="0.0" y="944" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gnt-71-Qb3" id="x1F-0M-7vr">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWToasterFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqo-vn-lf5">
+                                                    <rect key="frame" x="15" y="12" width="121" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Qqo-vn-lf5" firstAttribute="leading" secondItem="x1F-0M-7vr" secondAttribute="leading" constant="15" id="tHN-80-0A3"/>
+                                                <constraint firstItem="Qqo-vn-lf5" firstAttribute="centerY" secondItem="x1F-0M-7vr" secondAttribute="centerY" id="xCM-bH-aJk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWToasterFilter" id="NxE-Ok-gEW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="C9x-zy-CT4">
+                                        <rect key="frame" x="0.0" y="988" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C9x-zy-CT4" id="0VD-bu-Wmi">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWSutroFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgG-DU-0L8">
+                                                    <rect key="frame" x="15" y="12" width="105" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kgG-DU-0L8" firstAttribute="centerY" secondItem="0VD-bu-Wmi" secondAttribute="centerY" id="OWu-gN-mmE"/>
+                                                <constraint firstItem="kgG-DU-0L8" firstAttribute="leading" secondItem="0VD-bu-Wmi" secondAttribute="leading" constant="15" id="rgq-aJ-Qlo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWSutroFilter" id="BWC-WW-wbG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="gxt-km-4Mv">
+                                        <rect key="frame" x="0.0" y="1032" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gxt-km-4Mv" id="pg6-c8-5SO">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWSierraFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eG0-kS-GYd">
+                                                    <rect key="frame" x="15" y="12" width="108.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eG0-kS-GYd" firstAttribute="leading" secondItem="pg6-c8-5SO" secondAttribute="leading" constant="15" id="3Wq-KK-hc0"/>
+                                                <constraint firstItem="eG0-kS-GYd" firstAttribute="centerY" secondItem="pg6-c8-5SO" secondAttribute="centerY" id="Sk0-bZ-YOy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWSierraFilter" id="2Jd-1s-cxF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="7lE-Pf-SLw">
+                                        <rect key="frame" x="0.0" y="1076" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7lE-Pf-SLw" id="1Za-dV-MhU">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWRiseFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTK-td-BSv">
+                                                    <rect key="frame" x="15" y="12" width="96" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aTK-td-BSv" firstAttribute="leading" secondItem="1Za-dV-MhU" secondAttribute="leading" constant="15" id="M2F-c6-YtU"/>
+                                                <constraint firstItem="aTK-td-BSv" firstAttribute="centerY" secondItem="1Za-dV-MhU" secondAttribute="centerY" id="m7D-lh-HCg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWRiseFilter" id="UAe-fc-Nre"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="HjQ-TR-kTt">
+                                        <rect key="frame" x="0.0" y="1120" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HjQ-TR-kTt" id="wHg-pJ-Paw">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWNashvilleFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZi-Dm-Qb9">
+                                                    <rect key="frame" x="15" y="12" width="132.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pZi-Dm-Qb9" firstAttribute="centerY" secondItem="wHg-pJ-Paw" secondAttribute="centerY" id="7QK-HX-oRx"/>
+                                                <constraint firstItem="pZi-Dm-Qb9" firstAttribute="leading" secondItem="wHg-pJ-Paw" secondAttribute="leading" constant="15" id="Cth-BN-1GA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWNashvilleFilter" id="sf5-aw-QWu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="hLp-w6-B4n">
+                                        <rect key="frame" x="0.0" y="1164" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hLp-w6-B4n" id="M0l-ay-ldl">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWLordKelvinFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHl-1t-E5d">
+                                                    <rect key="frame" x="15" y="12" width="143.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aHl-1t-E5d" firstAttribute="leading" secondItem="M0l-ay-ldl" secondAttribute="leading" constant="15" id="dQL-wR-Cbt"/>
+                                                <constraint firstItem="aHl-1t-E5d" firstAttribute="centerY" secondItem="M0l-ay-ldl" secondAttribute="centerY" id="zOo-nR-suB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWLordKelvinFilter" id="hP6-2I-b0I"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="rnu-m3-t2v">
+                                        <rect key="frame" x="0.0" y="1208" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rnu-m3-t2v" id="Pnz-cr-ZX5">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWLomofiFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6t-NE-MYI">
+                                                    <rect key="frame" x="15" y="12" width="116" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="M6t-NE-MYI" firstAttribute="leading" secondItem="Pnz-cr-ZX5" secondAttribute="leading" constant="15" id="Dbk-yc-Cfr"/>
+                                                <constraint firstItem="M6t-NE-MYI" firstAttribute="centerY" secondItem="Pnz-cr-ZX5" secondAttribute="centerY" id="lgE-bt-x2q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWLomofiFilter" id="5O5-RI-68C"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="v0a-OK-cij">
+                                        <rect key="frame" x="0.0" y="1252" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v0a-OK-cij" id="dfK-SU-pi6">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWInkwellFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgK-8V-pbW">
+                                                    <rect key="frame" x="15" y="12" width="116" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YgK-8V-pbW" firstAttribute="leading" secondItem="dfK-SU-pi6" secondAttribute="leading" constant="15" id="JzE-gG-dTq"/>
+                                                <constraint firstItem="YgK-8V-pbW" firstAttribute="centerY" secondItem="dfK-SU-pi6" secondAttribute="centerY" id="rnr-Ot-aE9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWInkwellFilter" id="9h6-Fg-ANF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="XPu-DY-GGI">
+                                        <rect key="frame" x="0.0" y="1296" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XPu-DY-GGI" id="i1e-wo-etu">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWHudsonFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3a-2e-j9b">
+                                                    <rect key="frame" x="15" y="12" width="123.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="z3a-2e-j9b" firstAttribute="centerY" secondItem="i1e-wo-etu" secondAttribute="centerY" id="5Uo-hf-plk"/>
+                                                <constraint firstItem="z3a-2e-j9b" firstAttribute="leading" secondItem="i1e-wo-etu" secondAttribute="leading" constant="15" id="NOV-ke-1O9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWHudsonFilter" id="NN5-yE-FIL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="6Ud-Jj-bM6">
+                                        <rect key="frame" x="0.0" y="1340" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Ud-Jj-bM6" id="8fp-2z-ZNa">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWHefeFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3UA-gd-BeX">
+                                                    <rect key="frame" x="15" y="12" width="100" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3UA-gd-BeX" firstAttribute="leading" secondItem="8fp-2z-ZNa" secondAttribute="leading" constant="15" id="9dM-RS-O8b"/>
+                                                <constraint firstItem="3UA-gd-BeX" firstAttribute="centerY" secondItem="8fp-2z-ZNa" secondAttribute="centerY" id="rpP-67-GBa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWHefeFilter" id="mFg-2R-RnS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="uEt-sZ-din">
+                                        <rect key="frame" x="0.0" y="1384" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uEt-sZ-din" id="XJp-pB-DpY">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWEarlybirdFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRm-lE-e2S">
+                                                    <rect key="frame" x="15" y="12" width="131" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GRm-lE-e2S" firstAttribute="leading" secondItem="XJp-pB-DpY" secondAttribute="leading" constant="15" id="Al3-Cy-vrJ"/>
+                                                <constraint firstItem="GRm-lE-e2S" firstAttribute="centerY" secondItem="XJp-pB-DpY" secondAttribute="centerY" id="FFx-O7-QFf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWEarlybirdFilter" id="c5b-RZ-Krk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="wK5-0g-4vD">
+                                        <rect key="frame" x="0.0" y="1428" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wK5-0g-4vD" id="cnR-Ru-SaI">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWBrannanFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcB-3c-pof">
+                                                    <rect key="frame" x="15" y="12" width="127" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JcB-3c-pof" firstAttribute="leading" secondItem="cnR-Ru-SaI" secondAttribute="leading" constant="15" id="1d6-eH-8QX"/>
+                                                <constraint firstItem="JcB-3c-pof" firstAttribute="centerY" secondItem="cnR-Ru-SaI" secondAttribute="centerY" id="bwI-X7-x9F"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWBrannanFilter" id="hxf-Js-woT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Xnl-Ho-DdJ">
+                                        <rect key="frame" x="0.0" y="1472" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xnl-Ho-DdJ" id="MfW-lC-PWy">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FWAmaroFilter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1N-5A-Im3">
+                                                    <rect key="frame" x="15" y="12" width="113" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="I1N-5A-Im3" firstAttribute="centerY" secondItem="MfW-lC-PWy" secondAttribute="centerY" id="B6N-rc-zeS"/>
+                                                <constraint firstItem="I1N-5A-Im3" firstAttribute="leading" secondItem="MfW-lC-PWy" secondAttribute="leading" constant="15" id="G74-ez-LXy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FWAmaroFilter" id="Usc-lm-eO2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="euY-cD-b2Z">
+                                        <rect key="frame" x="0.0" y="1516" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="euY-cD-b2Z" id="P6b-cM-pDF">
+                                            <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FW1977Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKZ-wO-fPD">
+                                                    <rect key="frame" x="15" y="12" width="100.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QKZ-wO-fPD" firstAttribute="leading" secondItem="P6b-cM-pDF" secondAttribute="leading" constant="15" id="Qpm-Us-tJc"/>
+                                                <constraint firstItem="QKZ-wO-fPD" firstAttribute="centerY" secondItem="P6b-cM-pDF" secondAttribute="centerY" id="U21-K3-vuW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PsH-7c-eQM" kind="show" identifier="FW1977Filter" id="JGM-r3-DY9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="He0-sC-1V9" id="iUt-Br-Iyg"/>
+                            <outlet property="delegate" destination="He0-sC-1V9" id="x4k-0h-WXr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="GPUImage" id="zVY-a5-CSx"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1500"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BhW-7e-ECr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="75"/>
+        </scene>
+        <!--Single Filter View Controller-->
+        <scene sceneID="RkE-XE-lPD">
+            <objects>
+                <viewController id="PsH-7c-eQM" customClass="SingleFilterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qbr-TL-gZb"/>
+                        <viewControllerLayoutGuide type="bottom" id="uv8-gW-HfV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8O3-1w-ez7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1U3-e2-QyQ">
+                                <rect key="frame" x="38" y="388" width="244" height="31"/>
+                                <connections>
+                                    <action selector="sliderValue_Changed:" destination="PsH-7c-eQM" eventType="valueChanged" id="4tq-KW-ee3"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsQ-qy-ev7">
+                                <rect key="frame" x="40" y="418" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neD-zm-r1S">
+                                <rect key="frame" x="269" y="418" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9d-8G-Rjk">
+                                <rect key="frame" x="40" y="362" width="54.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value2:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jii-ak-CUb">
+                                <rect key="frame" x="40" y="462" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95p-MW-ydn">
+                                <rect key="frame" x="102" y="462" width="24" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fai-4O-lhz">
+                                <rect key="frame" x="40" y="518" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuC-8Y-PNW">
+                                <rect key="frame" x="269.5" y="518" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4cR-8j-Un9">
+                                <rect key="frame" x="38" y="488" width="244" height="31"/>
+                                <connections>
+                                    <action selector="slide2Value_Changed:" destination="PsH-7c-eQM" eventType="valueChanged" id="m4n-m4-5st"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkQ-XB-JLa">
+                                <rect key="frame" x="99" y="362" width="24" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1U3-e2-QyQ" firstAttribute="top" secondItem="D9d-8G-Rjk" secondAttribute="bottom" constant="5" id="1sa-ad-heC"/>
+                            <constraint firstItem="95p-MW-ydn" firstAttribute="leading" secondItem="jii-ak-CUb" secondAttribute="trailing" constant="5" id="GM1-rf-gsu"/>
+                            <constraint firstItem="BuC-8Y-PNW" firstAttribute="top" secondItem="4cR-8j-Un9" secondAttribute="bottom" id="I8g-w6-RjJ"/>
+                            <constraint firstItem="1U3-e2-QyQ" firstAttribute="leading" secondItem="8O3-1w-ez7" secondAttribute="leading" constant="40" id="IAJ-ca-uoZ"/>
+                            <constraint firstItem="4cR-8j-Un9" firstAttribute="leading" secondItem="1U3-e2-QyQ" secondAttribute="leading" id="Nwo-Bj-YXp"/>
+                            <constraint firstItem="dsQ-qy-ev7" firstAttribute="top" secondItem="1U3-e2-QyQ" secondAttribute="bottom" id="PKu-9z-4kl"/>
+                            <constraint firstItem="jii-ak-CUb" firstAttribute="leading" secondItem="D9d-8G-Rjk" secondAttribute="leading" id="Q2D-ip-0Uj"/>
+                            <constraint firstItem="ZkQ-XB-JLa" firstAttribute="leading" secondItem="D9d-8G-Rjk" secondAttribute="trailing" constant="5" id="Scx-HF-XzY"/>
+                            <constraint firstItem="dsQ-qy-ev7" firstAttribute="leading" secondItem="1U3-e2-QyQ" secondAttribute="leading" id="UDZ-K1-PTk"/>
+                            <constraint firstItem="neD-zm-r1S" firstAttribute="top" secondItem="1U3-e2-QyQ" secondAttribute="bottom" id="UP0-0B-DKI"/>
+                            <constraint firstItem="uv8-gW-HfV" firstAttribute="top" secondItem="4cR-8j-Un9" secondAttribute="bottom" constant="50" id="VKs-nk-mAX"/>
+                            <constraint firstItem="neD-zm-r1S" firstAttribute="trailing" secondItem="1U3-e2-QyQ" secondAttribute="trailing" id="W6J-Nb-CgS"/>
+                            <constraint firstItem="D9d-8G-Rjk" firstAttribute="leading" secondItem="1U3-e2-QyQ" secondAttribute="leading" id="Wp6-07-2U4"/>
+                            <constraint firstItem="fai-4O-lhz" firstAttribute="leading" secondItem="4cR-8j-Un9" secondAttribute="leading" id="gUf-yk-Tk6"/>
+                            <constraint firstItem="95p-MW-ydn" firstAttribute="top" secondItem="jii-ak-CUb" secondAttribute="top" id="hJM-58-WC5"/>
+                            <constraint firstItem="4cR-8j-Un9" firstAttribute="top" secondItem="jii-ak-CUb" secondAttribute="bottom" constant="5" id="ico-DN-XvU"/>
+                            <constraint firstItem="ZkQ-XB-JLa" firstAttribute="top" secondItem="D9d-8G-Rjk" secondAttribute="top" id="iyx-OR-e9q"/>
+                            <constraint firstAttribute="trailing" secondItem="1U3-e2-QyQ" secondAttribute="trailing" constant="40" id="jNt-7r-u71"/>
+                            <constraint firstItem="uv8-gW-HfV" firstAttribute="top" secondItem="1U3-e2-QyQ" secondAttribute="bottom" constant="150" id="n0q-pb-G6w"/>
+                            <constraint firstItem="BuC-8Y-PNW" firstAttribute="trailing" secondItem="4cR-8j-Un9" secondAttribute="trailing" id="oBY-lV-Ccy"/>
+                            <constraint firstItem="4cR-8j-Un9" firstAttribute="trailing" secondItem="1U3-e2-QyQ" secondAttribute="trailing" id="sAv-Q0-DuN"/>
+                            <constraint firstItem="fai-4O-lhz" firstAttribute="top" secondItem="4cR-8j-Un9" secondAttribute="bottom" id="xuU-cb-0yT"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="maxValueLab1" destination="neD-zm-r1S" id="gfg-vr-2xq"/>
+                        <outlet property="maxValueLab2" destination="BuC-8Y-PNW" id="6TN-C1-9lF"/>
+                        <outlet property="minValueLab1" destination="dsQ-qy-ev7" id="9Ye-eq-9AE"/>
+                        <outlet property="minValueLab2" destination="fai-4O-lhz" id="zhM-g4-dBN"/>
+                        <outlet property="slider1" destination="1U3-e2-QyQ" id="SwK-rh-A0r"/>
+                        <outlet property="slider2" destination="4cR-8j-Un9" id="zAX-N5-oka"/>
+                        <outlet property="value1Lab" destination="ZkQ-XB-JLa" id="b4S-Gd-Onl"/>
+                        <outlet property="value1NameLab" destination="D9d-8G-Rjk" id="90H-qs-1Ah"/>
+                        <outlet property="value2Lab" destination="95p-MW-ydn" id="H7Q-OL-Yl9"/>
+                        <outlet property="value2NameLab" destination="jii-ak-CUb" id="p4r-c9-zwd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wqR-E4-fv9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="480" y="75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="igv-eS-RUB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wYT-Zv-HEr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Afq-kf-eZ0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="He0-sC-1V9" kind="relationship" relationship="rootViewController" id="lRp-Y5-M0b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kol-Qw-KXn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-349" y="75"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="RsN-rv-KBO"/>
+    </inferredMetricsTieBreakers>
+</document>
